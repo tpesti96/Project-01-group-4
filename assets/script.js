@@ -5,7 +5,7 @@ function testapi (requesturl) {
     .then(response => response.json())
     
     
-    .then(function (response) {console.log(response.moves)})
+    .then(function (response) {console.log(response.name), console.log(response.types[0].type.name)})
 
 
 
