@@ -20,8 +20,9 @@ function testapi (submiturl) {
         
         
         
-        console.log(response.types[0].type.name), 
-        //console.log(response.types[1].type.name)
+        console.log(response.types[0].type.name); 
+        if (response.types.length > 1) {console.log("its long"), console.log(response.types[1].type.name)}
+        else {console.log("Its short")}
         console.log(response)
     
     
