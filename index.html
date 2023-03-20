@@ -10,19 +10,40 @@
     integrity="sha512-KXol4x3sVoO+8ZsWPFI/r5KBVB/ssCGB5tsv2nVOKwLg33wTFP3fmnXa47FdSVIshVTgsYk/1734xSk9aFIa4A==" crossorigin="anonymous" 
     referrerpolicy="no-referrer"/>
 
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
+
     <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
-    
-<main>
-    <h1>Poké-Search!</h1>
-    <p>Click the button to search for a Pokémon to get stats on it.</p>
-    <form>
-        <input type="text" id="searchBox" placeholder="">
-        <button type="submit" id="search-button"><span>Search</span></button>
-    </form>
-</main>
+    <span id="warning-container"></span>
+    <div id="my-container" class="ui grid middle aligned">
+        <div class="row">
+            <div class="column">
+                <div class="ui text container segment inverted">
+                    <div class="centered row eight wide column">
+            <div id="title" class="card">
+                <div class="ui center aligned content teal header">Poké-search!</div>
+            </div>
+            <form class="ui large form">
+                <div class="ui fluid action input">
+                    <input type="text" id="pokemon-auto" placeholder="Search Pokémon...">
+                    <div class="ui button"><i class="search icon"></i></div>
+                  </div>
+                <div class="ui error message"></div>
+            </form>
+            <div class="ui message"></div>     
+        </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="./assets/script.js"></script>
 </body>
 </html>
