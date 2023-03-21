@@ -3,7 +3,7 @@ var search = $("#pokemon-auto")
 var searchButton = $("#poke-button")
 var subtest = 
 
-searchButton.click (function () {subtest = "./PokeResult.html?q=" + search.val(), location.assign(subtest)})
+searchButton.click (function () {subtest = "./PokeResult.html?q=" + search.val().toLowerCase(), location.assign(subtest)})
 
 $(function () {
     var skillNames = [
