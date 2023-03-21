@@ -1,7 +1,10 @@
 var searchquerry = document.location.search.split("=").pop()
+searchquerry = searchquerry.toLowerCase();
 var urlhold = 'https://pokeapi.co/api/v2/pokemon/'
 var submiturl = ""
 //console.log(searchquerry)
+
+
 
 
 
@@ -33,3 +36,14 @@ function testapi (submiturl) {
 
 }
 makeUrl()
+
+const TENOR_API_KEY = "AIzaSyAMxg6d2IH5__7rLo8TVcMFPgQKYM7ULPs"
+
+fetch("https://tenor.googleapis.com/v2/search?key="+TENOR_API_KEY+"&q="+searchquerry+"&contentfilter=high&media_filter=gif")
+.then(response => response.json())
+.then (function(data) {
+    console.log(data)
+    console.log(data.results[0].url)
+    console.log(data.results[0].media_formats.gif.url)
+    // document.getElementById("pokemon-pic").src = data.results[0].media_formats.gif.url
+})
