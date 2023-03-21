@@ -1,16 +1,42 @@
+@font-face {
+    font-family: 'Pokefont';
+    src: url(fonts/Pokemon-Solid.ttf);
+}
 
-body {
-    background-color: rgb(227, 250, 243);
+* {
+    box-sizing: border-box;
+}
+
+
+#Pokefont {
+    font-family: 'Pokefont';
+    font-size: 6rem;
+    color: #ffcb05;
+    letter-spacing: .5rem;
+    margin-top: .9rem;
+    margin-bottom: -1rem;
+    -webkit-text-stroke-width: .09rem;
+    -webkit-text-stroke-color: #2a75bb;
 }
 
 #center {
 justify-content: center;
 }
 
-#my-container {
-    background: rgb(218, 218, 218);
+body {
     height: 100vh;
+    width: 100vw;
+}
+
+#my-container {
+    background: rgb(218,218,218);
+    background: linear-gradient(0deg, rgba(218,218,218,1) 25%, rgba(227,250,243,1) 100%, rgba(218,218,218,1) 100%);
+    position:absolute;
+    height: 100%;
     width: 100%;
+    margin: auto;
+    padding: 0;
+
   }
 
   #title {
