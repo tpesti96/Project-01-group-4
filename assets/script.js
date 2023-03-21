@@ -1,7 +1,5 @@
 const TENOR_API_KEY = "AIzaSyAMxg6d2IH5__7rLo8TVcMFPgQKYM7ULPs"
 
-document.cookie = "SameSite=None";
-
 fetch("https://tenor.googleapis.com/v2/search?key="+TENOR_API_KEY+"&q=charmander&contentfilter=high&media_filter=gif", {
 })
 .then(function(response) {
@@ -15,22 +13,11 @@ fetch("https://tenor.googleapis.com/v2/search?key="+TENOR_API_KEY+"&q=charmander
 })
 
 
-// fetch("https://pokeapi.co/api/v2/pokemon/pikachu")
-//     .then(function (response) {
-//         return response.json();
-//     })
-//     .then(function (data) {
-//         console.log(data)
-//         console.log(data.name);
-//         console.log(data.types[0].type.name)
-//         console.log(data.species.name)
-//         console.log(data.held_items[0].item.name)
-//     })
-
-// fetch("https://pokeapi.co/api/v2/type/electric").then(function(response) {
-//     return response.json();
-// })
-// .then(function(data) {
-//     console.log(data)
-//     console.log(data.pokemon[22].pokemon.name);
-// })
+$(function () {
+    var skillNames = [
+        "Bulbasaur","Ivysaur","Venusaur","Charmander","Charmeleon","Charizard","Squirtle","Wartortle","Blastoise","Caterpie","Metapod","Butterfree","Weedle","Kakuna","Beedrill","Pidgey","Pidgeotto","Pidgeot","Rattata","Raticate","Spearow","Fearow","Ekans","Arbok","Pikachu","Raichu","Sandshrew","Sandslash","Nidoran","Nidorina","Nidoqueen","Nidoran","Nidorino","Nidoking","Clefairy","Clefable","Vulpix","Ninetales","Jigglypuff","Wigglytuff","Zubat","Golbat","Oddish","Gloom","Vileplume","Paras","Parasect","Venonat","Venomoth","Diglett","Dugtrio","Meowth","Persian","Psyduck","Golduck","Mankey","Primeape","Growlithe","Arcanine","Poliwag","Poliwhirl","Poliwrath","Abra","Kadabra","Alakazam","Machop","Machoke","Machamp","Bellsprout","Weepinbell","Victreebel","Tentacool","Tentacruel","Geodude","Graveler","Golem","Ponyta","Rapidash","Slowpoke","Slowbro","Magnemite","Magneton","Farfetch'd","Doduo","Dodrio","Seel","Dewgong","Grimer","Muk","Shellder","Cloyster","Gastly","Haunter","Gengar","Onix","Drowzee","Hypno","Krabby","Kingler","Voltorb","Electrode","Exeggcute","Exeggutor","Cubone","Marowak","Hitmonlee","Hitmonchan","Lickitung","Koffing","Weezing","Rhyhorn","Rhydon","Chansey","Tangela","Kangaskhan","Horsea","Seadra","Goldeen","Seaking","Staryu","Starmie","Mr. Mime","Scyther","Jynx","Electabuzz","Magmar","Pinsir","Tauros","Magikarp","Gyarados","Lapras","Ditto","Eevee","Vaporeon","Jolteon","Flareon","Porygon","Omanyte","Omastar","Kabuto","Kabutops","Aerodactyl","Snorlax","Articuno","Zapdos","Moltres","Dratini","Dragonair","Dragonite","Mewtwo","Mew",
+    ];
+    $('#pokemon-auto').autocomplete({
+      source: skillNames,
+    });
+  });
