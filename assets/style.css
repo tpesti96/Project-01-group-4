@@ -178,14 +178,14 @@ button:hover {
   color: white;
   border-radius: 5px;
   height: 3.5rem;
-  width: 7.5rem;
+  width: fit-content;
   display: inline-block;
   left: 11rem;
   text-align: center;
   font-size: 1.8rem;
   position: relative;
   top: -4rem;
-  margin-left: 1.8rem;
+  margin-right: 1.8rem;
 }
 
 .pokemon-logo {

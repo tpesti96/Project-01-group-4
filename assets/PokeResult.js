@@ -13,12 +13,31 @@ var stats = [$("#S0"), $("#S1"), $("#S2"), $("#S3"), $("#S4"), $(".pokemon-name"
 
 
 
-function makeUrl () {submiturl = urlhold + searchquerry, testapi(submiturl)}
+function makeUrl () {submiturl = urlhold + searchquerry, check404(submiturl), testapi(submiturl)}
 
+
+function check404 (submiturl) {
+
+    fetch(submiturl)
+
+    .then(function (response) {
+        
+    
+    if (response.status !== 200) {console.log("its wrong")}
+    
+    
+    
+    
+    } );
+
+}
 
 function testapi (submiturl) {
     
+
+
     fetch(submiturl)
+    
     .then(response => response.json())
     
     .then(function (response) {
