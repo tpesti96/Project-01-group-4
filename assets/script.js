@@ -2,7 +2,7 @@
 var search = $("#pokemon-auto")
 var searchButton = $("#poke-button")
 var subtest = ""
-var lastbutton = $('#lastbutton')
+var lastbutton = $('#last-button')
 var lastsearch = ""
 var form = $("#pokeform")
 
