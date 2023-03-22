@@ -1,6 +1,15 @@
 
 body {
     background-color: rgb(227, 250, 243);
+    ;
+}
+
+.header {
+  display: inline-block;
+  background-image:url(/assets/photos/backround.jpg) ;
+  width: 100vw;
+  height: 20vh;
+  
 }
 
 #center {
@@ -16,4 +25,9 @@ justify-content: center;
   #title {
     margin-bottom: 1rem;
     font-size: 3.5rem;
+  }
+
+  .footer {
+
+
   }
