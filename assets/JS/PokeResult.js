@@ -23,7 +23,7 @@ function check404 (submiturl) {
     .then(function (response) {
         
     
-    if (response.status !== 200) {console.log("its wrong")}
+    if (response.status !== 200) {location.assign("./404.html")}
     
     
     

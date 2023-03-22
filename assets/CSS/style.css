@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Pokefont';
-    src: url(fonts/Pokemon-Solid.ttf);
+    src: url(../fonts/Pokemon-Solid.ttf);
 }
 
 * {
@@ -44,7 +44,7 @@ body {
   .collage {
     width: 100vw;
     height: 50vh;
-    background-image: url(./images/backround.jpg) ;
+    background-image: url("../images/backround.jpg") ;
   }
 
   #title {
@@ -74,7 +74,7 @@ a, button {
   justify-content: flex-end;
   align-items: center;
   padding: 20px 10%;
-  background-image: url(./images/backround.jpg) ;
+  background-image: url("../images/backround.jpg") ;
   opacity: 33%;
 }
 
