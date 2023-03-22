@@ -1,18 +1,3 @@
-// const TENOR_API_KEY = "AIzaSyAMxg6d2IH5__7rLo8TVcMFPgQKYM7ULPs"
-
-// fetch("https://tenor.googleapis.com/v2/search?key="+TENOR_API_KEY+"&q=charmander&contentfilter=high&media_filter=gif", {
-// })
-// .then(function(response) {
-//     return response.json();
-// })
-// .then (function(data) {
-//     console.log(data)
-//     console.log(data.results[0].url)
-//     console.log(data.results[0].media_formats.gif.url)
-//     document.getElementById("pokemon-pic").src = data.results[0].media_formats.gif.url
-// })
-
-
 var search = $("#pokemon-auto")
 var searchButton = $("#poke-button")
 var subtest = 
