@@ -17,31 +17,42 @@
 
     <link rel="stylesheet" href="./assets/style.css">
 </head>
+
+
 <body>
+
+    <header class="navbar">
+        <h1 id="Pokefont">Poké-Search</h1>
+        <a class="cta" href="#about"><button>About</button></a>
+        <div id="collage"></div>
+    </header>
+    
     <span id="warning-container"></span>
     <div id="my-container" class="ui grid middle aligned">
         <div class="row">
             <div class="column">
-                <div class="ui text container segment inverted">
+                <div id="collage" class="ui text container segment inverted">
                     <div class="centered row eight wide column">
             <div id="title" class="card">
-                <div class="ui center aligned content teal header">Poké-search!</div>
+                <div class="ui center aligned content header">
+                    <h1 id="Pokefont">Poké-Search!</h1>
+                </div>
             </div>
-            <form class="ui large form">
+            <form id="pokeform" class="ui large form">
                 <div class="ui fluid action input">
                     <input type="text" id="pokemon-auto" placeholder="Search Pokémon...">
                     <div id="poke-button" class="ui button"><i class="search icon"></i></div>
                   </div>
-                <div class="ui error message"></div>
+                  <div class="ui error message"></div>
             </form>
-            <div class="ui message"></div>     
+            <div id="last-button" class="ui message"></div>
         </div>
                 </div>
             </div>
         </div>
     </div>
 
-
+    
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="./assets/script.js"></script>
