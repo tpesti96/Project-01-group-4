@@ -15,27 +15,71 @@
 <body>
 
     <h1>PokeResult</h1>
+    <div class="ui equal width padded grid">
 
-    <img class="sprite-image" src="https://via.placeholder.com/500x500.png?text=Placeholder+Image">
+        <div id="sprite-container" class="row">
+          <div class="grey seven wide column">
 
-    <div class="card">
-        <ul>
-            <li>Name: </li>
-            <li>Entry Number: </li>
-            <li>Height: </li>
-            <li>Weight: </li>
-            <li>Types: </li>
-        </ul>
+            <div class="pokemon-card-container">
+
+              <div class="pokemon-card">
+                <div class="background">
+                  <h1 class="pokemon-name">Bulbasaur</h1>
+                  <div class="image-container">
+                    <img src="./assets/images/bulbasaur.png" class="image">
+                  </div>
+                </div>
+                
+                <div class="poke-content">
+                  <span class="pokemon-type">GRASS</span>
+                  <div class="pokemon-stats">
+                    <p>Power : 65</p>
+                    <p>Damage : 49</p>
+                    <p>Attacks : Vine Whip</p>
+                    <p>Height : 7</p>
+                    <p>Weight : 69</p>
+                  </div>
+                  <h1 class="pokemon-logo">Index No. 001</h1>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          
+        </div>
+
+        <div id="stats-container" class="row">
+          <div class="olive seven wide column">Custom Row</div>
+        </div>
     </div>
 
-    <img class="gif-image" src="https://dummyimage.com/600x400/000/fff.png&text=Placeholder+Image">
 
-    <button class="BackBtn">Go Back</button>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="./assets/PokeResult.js"></script>
-</body>
-</html>
+ <!--   <div class="ui inverted six column grid">
+  <div class="ui card">
+    <div class="image">
+      <div class="ui center aligned placeholder inverted">
+        <div class="square image"></div>
+      </div>
+    </div>
+    
+
+    <div class="ui inverted large segment">
+  <div class="ui active inverted placeholder">
+    <div class="image header">
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <div class="paragraph">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+  </div>
+</div>
+-->
+
+
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="./assets/PokeResult.js"></script>
 </body>
