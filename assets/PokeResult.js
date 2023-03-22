@@ -2,8 +2,9 @@ var searchquerry = document.location.search.split("=").pop()
 var urlhold = 'https://pokeapi.co/api/v2/pokemon/'
 var submiturl = ""
 var Sprite = $("#Sprite")
-var poketype = $(".pokemon-type")
-var stats = (".pokemon-stats > 0")
+//var poketype = $(".pokemon-type")
+//var pokename = $(".pokemon-name")
+var stats = [$("#S0"), $("#S1"), $("#S2"), $("#S3"), $("#S4"), $(".pokemon-name"), $(".pokemon-type"), $(".pokemon-logo")]
 
 //console.log(searchquerry)
 
@@ -25,17 +26,26 @@ function testapi (submiturl) {
         
 
         var spriteurl = response.sprites.front_default;    
-        console.log(response.name); 
-        if (response.types.length > 2) {poketype.text(response.types[0].type.name + " and ", response.types[1].type.name, " Type")}
-        else {poketype.text(response.types[0].type.name)}
-        console.log("the pokemon is ", response.height / 10 .toFixed(1), " meters tall");
-        console.log("the pokemon weighs ", response.weight / 10 .toFixed(1), " Kilograms");
+        stats[5].text(response.name.charAt(0).toUpperCase() + response.name.slice(1)); 
+        if (response.types.length > 1) {stats[6].text(response.types[0].type.name + "/" + response.types[1].type.name)}
+        else {stats[6].text(response.types[0].type.name)};
 
+        if (response.abilities.length === 1) {stats[2].text("Ability: " + response.abilities[0].ability.name)}
+        else if (response.abilities.length === 2) {stats[2].text("Ability: " + response.abilities[0].ability.name), stats[3].text("Hidden ability: " + response.abilities[1].ability.name)}
+        else if (response.abilities.length === 3) {stats[2].text("Ability 1: " + response.abilities[0].ability.name), stats[3].text("Ability 2: " + response.abilities[1].ability.name), stats[4].text("Hidden ability: " + response.abilities[2].ability.name)}
+
+
+
+
+        stats[7].text("Index No. " + response.id)
+        stats[0].text("Height: " + response.height / 10 .toFixed(1) +  "m");
+        stats[1].text("Weight: " +  response.weight / 10 .toFixed(1) + "kg");
+        
         console.log(response);
     
         Sprite.attr("src", spriteurl);
     
-    
+        
     
     })
 }
