@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Poké-search</title> 
+    <title>Poké-Search</title> 
     <link rel="stylesheet" 
     href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.css" 
     integrity="sha512-KXol4x3sVoO+8ZsWPFI/r5KBVB/ssCGB5tsv2nVOKwLg33wTFP3fmnXa47FdSVIshVTgsYk/1734xSk9aFIa4A==" crossorigin="anonymous" 
@@ -17,12 +17,21 @@
 
     <link rel="stylesheet" href="./assets/style.css">
 </head>
+
+
 <body>
+
+    <header class="navbar">
+        <h1 id="Pokefont">Poké-Search</h1>
+        <a class="cta" href="#about"><button>About</button></a>
+        <div id="collage"></div>
+    </header>
+    
     <span id="warning-container"></span>
     <div id="my-container" class="ui grid middle aligned">
         <div class="row">
             <div class="column">
-                <div class="ui text container segment inverted">
+                <div id="collage" class="ui text container segment inverted">
                     <div class="centered row eight wide column">
             <div id="title" class="card">
                 <div class="ui center aligned content header">
@@ -32,9 +41,11 @@
             <form class="ui large form">
                 <div class="ui fluid action input">
                     <input type="text" id="pokemon-auto" placeholder="Search Pokémon...">
-                    <div class="ui button"><i class="search icon"></i></div>
+                    <div id="poke-button" class="ui button"><i class="search icon"></i></div>
                   </div>
+                  <div class="ui error message"></div>
             </form>
+            <div id="last-button" class="ui message"></div>
         </div>
                 </div>
             </div>
