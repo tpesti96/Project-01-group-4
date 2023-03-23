@@ -1,4 +1,4 @@
-# Group 4 Project 01: Pokè-Search
+# Pokè-Search
 
 ## Description
 
@@ -18,9 +18,13 @@ Follow the link for the deployed application and open it in your default web bro
 
 ## Usage
 
-At the start page, search for a Pokèmon and click the magnifying glass button to display the result for your search.
+At the start page, search for a Pokèmon and click the magnifying glass button to display the result for your search. Example images are included below.
 
-[INSERT SCREENSHOTS OF FINAL MVP HERE]
+![Start Page for Pokè-Search](assets/images/Screen%20Shot%202023-03-23%20at%206.42.36%20PM.png)
+
+![Result Page Example for Pokè-Search](assets/images/Screen%20Shot%202023-03-23%20at%206.42.57%20PM.png)
+
+
 
 ## Credits
 
