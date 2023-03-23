@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Pokefont';
-    src: url(fonts/Pokemon-Solid.ttf);
+    src: url(../fonts/Pokemon-Solid.ttf);
 }
 
 * {
@@ -32,7 +32,6 @@ body {
 }
 
 
-
 #my-container {
     background: rgb(218,218,218);
     background: linear-gradient(0deg, rgba(218,218,218,1) 25%, rgba(227,250,243,1) 100%, rgba(218,218,218,1) 100%);
@@ -40,13 +39,12 @@ body {
     height: 100%;
     width: 100%;
     margin: auto;
-    padding: 0;
   }
 
   .collage {
     width: 100vw;
-    height: 10vh;
-    background-image: url(./images/backround.jpg) ;
+    height: 50vh;
+    background-image: url("../images/backround.jpg") ;
   }
 
   #title {
@@ -78,7 +76,7 @@ a, button {
   justify-content: flex-end;
   align-items: center;
   padding: 20px 10%;
-  background-image: url(./images/backround.jpg) ;
+  background-image: url("../images/backround.jpg") ;
   opacity: 33%;
 }
 
@@ -129,12 +127,11 @@ button:hover {
 
 /* Pokemon Card Styling */
 
-
 .pokemon-card-container {
+  margin: auto;
   background: linear-gradient(to right, #ffe55c, #ffe55c);
-  width: 325px;
-  height: auto;
-  margin: 10%;
+  width: 36rem;
+  height: 50.7rem;
   padding: 10px;
   border-radius: 10px;
   box-shadow: 0px 0px 10px black;
@@ -149,21 +146,22 @@ button:hover {
 
 .image-container {
   margin: auto;
+  margin-top: -3rem;
   padding-left: 10px;
   border: solid;
   border-color: silver;
   background: linear-gradient(to right, #0d5a52, #2baea0);
-  width: 275px;
+  width: 32rem;
 }
 
 .image {
-  width: 175px;
-  height: 175px;
+  width: 19.5rem;
+  height: 19.5rem;
 }
 
 .poke-content {
   background: linear-gradient(to right, #b1b71c, #588532);
-  padding: 10px;
+  padding: 3.2rem;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
@@ -171,34 +169,42 @@ button:hover {
 .pokemon-name {
   text-align: left;
   margin-left: 20px;
-  font-size: 19px;
+  font-size: 2.4rem;
   font-weight: lighter;
   padding-top: 10px;
 }
 
 .pokemon-type {
   background-color: black;
-  padding: 7px;
+  padding: 1rem;
   color: white;
   border-radius: 5px;
-  height: 34px;
-  width: 80px;
-  display: block;
+  height: 3.5rem;
+  width: fit-content;
+  display: inline-block;
+  left: 11rem;
   text-align: center;
+  font-size: 1.8rem;
   position: relative;
-  top: -25px;
-  margin-left: 15px;
+  top: -4rem;
+  margin-right: 1.8rem;
 }
 
 .pokemon-logo {
   text-align: center;
-  font-size: 14px;
-  padding: 20px;
+  font-size: 1.2rem;
+  padding-bottom: 20px;
 }
 
 .pokemon-stats > p {
-  margin-left: 10px;
+  font-size: 2rem;
+  margin-left: .9rem;
   letter-spacing: 1px;
-  line-height: .3rem;
+  line-height: .6rem;
+  margin-bottom: 1.8rem;
+}
+
+.hr {
+  margin-top: 20px;
 }
 
