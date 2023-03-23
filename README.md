@@ -8,16 +8,19 @@ Our full-stack flex coding course was given a project assignment that we were pu
 
 ```
 AS A gamer,
-I WANT to search for a Pokemon
+I WANT to search for a Pokèmon
 SO THAT I can see statistics on them and learn more about them.
 ```
 
 ## Installation
 
+Follow the link for the deployed application and open it in your default web browser. 
 
 ## Usage
 
+At the start page, search for a Pokèmon and click the magnifying glass button to display the result for your search.
 
+[INSERT SCREENSHOTS OF FINAL MVP HERE]
 
 ## Credits
 
@@ -32,11 +35,11 @@ Third-party assets: PokeAPI, Tenor API
 Creators of assets: 
     Paul Hallett and Zane Hadickes (PokeAPI)
         https://pokeapi.co/about
-    [insert Tenor API creators here]
+    [INSERT TENOR API CREATORS HERE]
 
 Tutorial Video Links used:
 
-
+[INSERT TUTORIAL VIDEO LINKS HERE]
 
 ## License
 
