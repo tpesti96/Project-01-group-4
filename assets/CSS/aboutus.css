@@ -40,7 +40,7 @@ body {
     text-align: center;
 }
 
-h1 {
+.hubs {
     color: yellow;
     font-size: 1rem;
     font-weight: 700;
@@ -74,7 +74,7 @@ p {
     background-color: yellow;
     font-size: 2rem;
     text-decoration: none;
-    color: white;
+    color: grey;
     border-radius: 10px;
     transition: background 0.5s;
     text-align: center;
@@ -114,6 +114,7 @@ header > h1 {
     align-items: center;
     padding: 20px 10%;
     background-image: url("../images/backround.jpg") ;
+    min-height: 150px !important;
   }
   
   
@@ -136,7 +137,7 @@ header > h1 {
   
   button {
     font-family: 'Pokefont';
-    font-size: 2rem;
+    font-size: 3rem;
       color: #ffcb05;
       letter-spacing: .5rem;
       margin-top: .9rem;
@@ -147,12 +148,13 @@ header > h1 {
     height: 50px;
     margin-left: 20px;
     margin-top: 10px;
-    padding: 9px 25px;
+    padding: 0px 0px 10px 0px !important;
     background-color: rgb(109, 109, 109);
     border: none;
     border-radius: 15px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
+    
   
   }
   
