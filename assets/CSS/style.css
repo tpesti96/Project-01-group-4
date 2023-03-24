@@ -9,7 +9,9 @@
     padding: 0px;
 }
 
-
+html {
+  background-color: rgba(218,218,218,1);
+}
 
 .pokefont {
     font-family: 'Pokefont';
@@ -219,4 +221,10 @@ button:hover {
   margin-left: 80px;
   margin-top: 40px;
   padding-bottom: 40px;
+}
+
+#error-msg a{
+  font-size: inherit;
+  color: #4183c4;
+  font-weight: inherit;
 }
