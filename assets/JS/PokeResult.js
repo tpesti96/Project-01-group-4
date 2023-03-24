@@ -75,7 +75,7 @@ $(function () {
 makeUrl()
 })
 
-fetch("https://tenor.googleapis.com/v2/search?key="+TENOR_API_KEY+"&q="+searchquerry+"&contentfilter=high&media_filter=gif")
+fetch("https://tenor.googleapis.com/v2/search?key="+TENOR_API_KEY+"&q="+searchquerry+" pokemon&contentfilter=high&media_filter=gif")
 .then(response => response.json())
 .then (function(data) {
     var gif = data.results[0].media_formats.gif.url
