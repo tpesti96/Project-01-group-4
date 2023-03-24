@@ -16,7 +16,7 @@ SO THAT I can see statistics on them and learn more about them.
 
 Follow the link for the deployed application and open it in your default web browser. 
 
-Deployed Application Link: [INSERT LINK HERE]
+Deployed Application Link: https://tpesti96.github.io/Project-01-group-4/
 
 GitHub Repository Link: https://github.com/tpesti96/Project-01-group-4
 
