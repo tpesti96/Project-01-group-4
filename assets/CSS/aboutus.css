@@ -74,11 +74,10 @@ p {
     background-color: yellow;
     font-size: 2rem;
     text-decoration: none;
-    color: white;
+    color: black;
     border-radius: 10px;
     transition: background 0.5s;
     text-align: center;
-    width: 20vw;
 
 
 }
