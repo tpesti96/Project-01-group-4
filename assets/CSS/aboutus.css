@@ -1,10 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
 
+@font-face {
+    font-family: 'Pokefont';
+    src: url(../fonts/Pokemon-Solid.ttf);
+}
+
 * {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+}
+
+.pokefont {
+    font-family: 'Pokefont';
+    font-size: 6rem;
+    color: #ffcb05;
+    letter-spacing: .5rem;
+    margin-top: .9rem;
+    margin-bottom: -1rem;
+    -webkit-text-stroke-width: .09rem;
+    -webkit-text-stroke-color: #2a75bb;
 }
 
 html {
@@ -40,10 +56,8 @@ h2{
 }
 
 .image {
-    margin-top: 7rem;
-    margin-bottom: 3rem;
-    margin-left: 87rem;
-    margin-bottom: 4rem;
+    display: flex;
+    justify-content: center;
 }
 
 p {
@@ -55,7 +69,7 @@ p {
 }
 
 .btn {
-    display: inline-block;
+    text-align: center;
     padding: 2.7rem 7.5rem;
     background-color: yellow;
     font-size: 2rem;
@@ -64,11 +78,87 @@ p {
     border-radius: 10px;
     transition: background 0.5s;
     text-align: center;
-    margin-left: 97rem;
-    margin-top: 12rem;
-    margin-bottom: 4rem;
+    width: 20vw;
+
+
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 6rem;
+    padding-bottom: 12rem;
 }
 
 .btn:hover{
     background: #dadada;
 }
+
+/* nav bar styling */
+
+header > h1 {
+    display: flex;
+    justify-content: left;
+  }
+  
+  a, button {
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+  }
+  
+  .navbar {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 10%;
+    background-image: url("../images/backround.jpg") ;
+  }
+  
+  
+  
+  .navbar > h1 {
+    margin: auto;
+  
+  }
+  
+  .header {
+    /*display: inline-block;*/
+    padding: 0px 20px;
+  }
+  
+  .header > a {
+   transition: all 0.3s ease 0s;
+    text-decoration: none;
+    transition: text-shadow 0.3s linear;
+  }
+  
+  button {
+    font-family: 'Pokefont';
+    font-size: 2rem;
+      color: #ffcb05;
+      letter-spacing: .5rem;
+      margin-top: .9rem;
+      margin-bottom: -1rem;
+      -webkit-text-stroke-width: .09rem;
+      -webkit-text-stroke-color: #2a75bb;
+    width: 150px;
+    height: 50px;
+    margin-left: 20px;
+    margin-top: 10px;
+    padding: 9px 25px;
+    background-color: rgb(109, 109, 109);
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+  
+  }
+  
+  button:hover {
+    background-color: rgba(82, 81, 81, 0.8);
+  }
+
+
+/* nav bar styling */
