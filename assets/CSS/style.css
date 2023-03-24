@@ -11,7 +11,7 @@
 
 
 
-#Pokefont {
+.pokefont {
     font-family: 'Pokefont';
     font-size: 6rem;
     color: #ffcb05;
@@ -54,6 +54,8 @@ body {
 
   #sprite-container {
     height: 66vh;
+    align-items: center;
+    justify-content: space-around;
   }
 
   #stats-container {

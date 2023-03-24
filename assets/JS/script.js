@@ -1,6 +1,8 @@
-
 var search = $("#pokemon-auto")
 var searchButton = $("#poke-button")
+var subtest = 
+search.innerHTML = "sup"
+searchButton.click (function () {subtest = "./PokeResult.html?q=" + search.val(), location.assign(subtest)})
 var subtest = ""
 var lastbutton = $('#last-button')
 var lastsearch = ""
