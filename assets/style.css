@@ -34,10 +34,9 @@ body {
 
 
 #my-container {
-  position:absolute;
-  height: 100%;
-  width: 100%;
-   margin: auto;
+  height: 85vh;
+  width: 100vw;
+
   }
 
 
@@ -58,16 +57,17 @@ body {
 
 .hero {
   height: 100vh;
-  width: 100%;
-  background: rgb(218,218,218);
-  background: linear-gradient(0deg, rgba(218,218,218,1) 25%, rgba(227,250,243,1) 100%, rgba(218,218,218,1) 100%);
+  width: 100vw;
+  background-image: url(./images/backround.jpg);
   background-size: cover;
   background-position: center;
+  opacity: 100;
+  z-index: 1;
 }
 
 
 .logo {
-  color: #1c1c1d;
+  color: white;
   font-size: 28px;
   padding: 20px;
 }
@@ -79,6 +79,8 @@ span {
 .navbar {
   padding-inline: 30px;
   padding-top: 20px;
+  background-color: #1c1c1d;
+  z-index: 1;
 }
 
 
@@ -164,6 +166,7 @@ span {
 .hr {
   margin-top: 20px;
 }
+
 
 /* Transition Styling */
 /*
