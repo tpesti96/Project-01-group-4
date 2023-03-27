@@ -9,6 +9,7 @@ var lastsearch = ""
 var form = $("#pokeform")
 
 form.submit(function (event) {event.preventDefault(), subtest = "./PokeResult.html?q=" + search.val().toLowerCase(), localStorage.setItem("lastsearch", search.val().toLowerCase()), location.assign(subtest) })
+
 searchButton.click(function () { subtest = "./PokeResult.html?q=" + search.val().toLowerCase(), localStorage.setItem("lastsearch", search.val().toLowerCase()), location.assign(subtest) })
 lastbutton.click(function() {subtest = "./PokeResult.html?q=" + localStorage.getItem("lastsearch"), location.assign(subtest)})
 $(function () {
