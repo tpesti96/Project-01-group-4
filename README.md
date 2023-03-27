@@ -24,9 +24,9 @@ GitHub Repository Link: https://github.com/tpesti96/Project-01-group-4
 
 At the start page, search for a Pokèmon and click the magnifying glass button to display the result for your search. Example images are included below.
 
-![Start Page for Pokè-Search](assets/images/Screen%20Shot%202023-03-23%20at%206.42.36%20PM.png)
+![Start Page](assets/images/Start%20Page.png)
 
-![Result Page Example for Pokè-Search](assets/images/Screen%20Shot%202023-03-23%20at%206.42.57%20PM.png)
+![Result Page](assets/images/Result%20Page.png)
 
 ## Credits
 
