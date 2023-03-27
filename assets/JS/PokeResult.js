@@ -62,16 +62,19 @@ function testapi (submiturl) {
     })
 }
 
-$(function () {
-makeUrl()
+function makeGif () {
+    fetch("https://tenor.googleapis.com/v2/search?key="+TENOR_API_KEY+"&q="+searchquerry+" pokemon&contentfilter=high&media_filter=gif")
+    .then(response => response.json())
+    .then (function(data) {
+        var gif = data.results[0].media_formats.gif.url
+        var about = data.results[0].content_description
+        gifImage[0].src = gif;
+        gifImage[0].alt = about;    
+
 })
+}
 
-fetch("https://tenor.googleapis.com/v2/search?key="+TENOR_API_KEY+"&q="+searchquerry+" pokemon&contentfilter=high&media_filter=gif")
-.then(response => response.json())
-.then (function(data) {
-    var gif = data.results[0].media_formats.gif.url
-    var about = data.results[0].content_description
-    gifImage[0].src = gif;
-    gifImage[0].alt = about;    
-
+$(function () {
+    makeUrl();
+    makeGif();
 })
