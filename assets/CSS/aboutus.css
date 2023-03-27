@@ -23,9 +23,6 @@
     -webkit-text-stroke-color: #2a75bb;
 }
 
-html {
-    font-size: 10px;
-}
 
 body {
     background-color: rgba(82, 81, 81, 0.8);
@@ -42,7 +39,7 @@ body {
 
 .hubs {
     color: yellow;
-    font-size: 1rem;
+    font-size: 1.9rem;
     font-weight: 700;
     letter-spacing: 8px;
     margin-bottom: 2rem;
@@ -64,7 +61,7 @@ p {
     font-size: 2rem;
     color: white;
     line-height: 5rem;
-    margin-bottom: 5 rem;
+    margin-bottom: 5rem;
     text-align: center;
 }
 

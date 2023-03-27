@@ -39,8 +39,8 @@ body {
 }
 
 #my-container {
-  height: 100%;
-   width: 100%;
+  height: 89vh;
+   width: 100vw;
   }
 
   .collage {
