@@ -1,14 +1,9 @@
 @font-face {
     font-family: 'Pokefont';
-    src: url(../fonts/Pokemon-Solid.ttf);
+    src: url(./fonts/Pokemon-Solid.ttf);
 }
 
-* {
-background-color: grey;
 
-
-
-}
 
 .pokefont {
     font-family: 'Pokefont';
@@ -69,3 +64,37 @@ a {
 
 
 }
+
+/* Nav Bar Styling */
+
+
+.hero {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(./images/backround.jpg);
+  background-size: cover;
+  background-position: center;
+  opacity: 100;
+  z-index: -1000;
+ }
+ 
+ 
+ 
+ 
+ .logo {
+  color: white;
+  font-size: 28px;
+  padding: 20px;
+ }
+ 
+ 
+ span {
+  color: #ffcb05;
+ }
+ 
+ 
+ .navbar {
+  padding-inline: 10px;
+  background-color: #1c1c1d;
+  z-index: 100;
+ }
