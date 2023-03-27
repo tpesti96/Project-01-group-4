@@ -15,7 +15,7 @@ var stats = [$("#S0"), $("#S1"), $("#S2"), $("#S3"), $("#S4"), $(".pokemon-name"
 
 
 
-function makeUrl () {submiturl = urlhold + searchquerry, check404(submiturl), testapi(submiturl)}
+function makeUrl () {submiturl = urlhold + searchquerry, check404(submiturl), testapi(submiturl), makeGif()}
 
 
 function check404 (submiturl) {
@@ -75,15 +75,17 @@ $(function () {
 makeUrl()
 })
 
-fetch("https://tenor.googleapis.com/v2/search?key="+TENOR_API_KEY+"&q="+searchquerry+"&contentfilter=high&media_filter=gif")
-.then(response => response.json())
-.then (function(data) {
-    var gif = data.results[0].media_formats.gif.url
-    var about = data.results[0].content_description
-    console.log(data)
-    console.log(data.results[0].url)
-    console.log(data.results[0].media_formats.gif.url)
-    gifImage[0].src = gif;
-    gifImage[0].alt = about;    
+function makeGif () {
+    fetch("https://tenor.googleapis.com/v2/search?key="+TENOR_API_KEY+"&q="+searchquerry+" pokemon&contentfilter=high&media_filter=gif")
+    .then(response => response.json())
+    .then (function(data) {
+        var gif = data.results[0].media_formats.gif.url
+        var about = data.results[0].content_description
+        console.log(data)
+        console.log(data.results[0].url)
+        console.log(data.results[0].media_formats.gif.url)
+        gifImage[0].src = gif;
+        gifImage[0].alt = about;    
 
-})
+    })
+}
