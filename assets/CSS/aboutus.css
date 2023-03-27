@@ -25,9 +25,18 @@
 
 
 body {
-    background-color: rgba(82, 81, 81, 0.8);
+    
     font-family: 'Roboto', sans-serif;
 }
+
+.hero2 {
+
+  background-color: rgba(82, 81, 81, 0.8);
+  background-size: cover;
+  background-position: center;
+  opacity: 100;
+  z-index: -1000;
+ }
 
 .container {
     max-width: 1100px;
